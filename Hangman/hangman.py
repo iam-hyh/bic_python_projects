@@ -1,4 +1,7 @@
 """
+- TO DO LIST 26-06-2020:
+ADD MORE GAME ART
+
 - TO DO LIST 23-06-2020:
 ADD DRAWINGS AND FIX SOME ISSUES
 ADD IF THE USER INPUT WRONG GUESS AGAIN
@@ -32,7 +35,8 @@ reading the words list in python
 
 import random
 
-# DRAWINGS
+# ART INSPIRED BY https://www.asciiart.eu/
+
 sketch = ['''
     +---+
         |
@@ -74,12 +78,143 @@ sketch = ['''
    /|\  |
    /    |
        ===''', '''
-    +---+          ||||||    ||||||    ||||    ||||||
-   [O]  |          ||  |||   |        ||  ||   ||  |||
-   /|\  |          ||  |||   ||||     ||||||   ||  |||
-   / \  |          ||  |||   |        ||  ||   ||  |||
-       ===         ||||||    ||||||   ||  ||   ||||||
+    +---+          ██████╗  ███████╗ █████╗   ██████╗
+   [O]  |          ██╔══██╗ ██╔════╝ ██╔══██╗ ██╔══██╗
+   /|\  |          ██║  ██║ █████╗   ███████║ ██║  ██║
+   / \  |          ██║  ██║ ██╔══╝   ██╔══██║ ██║  ██║
+       ===         ██████╔╝ ███████╗ ██║  ██║ ██████╔╝
+                   ╚═════╝  ╚══════╝ ╚═╝  ╚═╝ ╚═════╝  
+          ''', '''
+    ,,,
+   (^_^)                                  [o_o]   (^.^) 
+ '\_| |_/'                               \_| |_/  \_|_/ 
+    | |    Y O U    W O N .  .  .  !       | |      |
+   /   \                                  /,  \,   / \   
+                                                                                 
         ''']
+
+football = ['''
+    -   \O                                   ,      ___
+  -     /\                                 O/      |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \, ()  LET'S SCORE A GOAL ..!    ` <<     |   |XX\ 
+*************************************************************''', '''
+    -   \O                                   ,      ___
+  -     /\                                 O/      |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \, ()    LET'S SCORE A GOAL ..!  ` <<     |   |XX\ 
+*************************************************************''', '''
+    -   \O                                   ,      ___
+  -     /\                                 O/      |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \,    -  ()    SCORE A GOAL ..!  ` <<     |   |XX\ 
+*************************************************************''', '''
+    -   \O                                   ,      ___
+  -     /\                                 O/      |   |\ 
+ -   __/\ `     -   -   -  () A GOAL ..!   /\      |   |X\ 
+    `    \,                               ` <<     |   |XX\ 
+*************************************************************''', '''
+    -   \O                                   ,      ___
+  -     /\    -     -     -   () GOAL ..!  O/      |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \,                               ` <<     |   |XX\ 
+*************************************************************''', '''
+    -   \O    -     -     -    -  () GOAL  ,  ,     ___
+  -     /\                                 |O/     |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \,                              ` <<      |   |XX\ 
+*************************************************************''', '''
+    -   \O      -     -     -     -   ().. ,  ,     ___
+  -     /\                                 |O/     |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \,                              ` <<      |   |XX\ 
+*************************************************************''', '''
+    -   \O                                 ,O,      ___
+  -     /\                                |O/      |   |\ 
+ -   __/\ `                                /\      |   |X\ 
+    `    \,                               ` <<     |   |XX\ 
+*************************************************************''', '''
+███╗   ██╗ ██████╗      ██████╗  ██████╗  █████╗ ██╗     
+████╗  ██║██╔═══██╗    ██╔════╝ ██╔═══██╗██╔══██╗██║     
+██╔██╗ ██║██║   ██║    ██║  ███╗██║   ██║███████║██║     
+██║╚██╗██║██║   ██║    ██║   ██║██║   ██║██╔══██║██║     
+██║ ╚████║╚██████╔╝    ╚██████╔╝╚██████╔╝██║  ██║███████╗
+╚═╝  ╚═══╝ ╚═════╝      ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝    ''', '''
+ ██████╗      ██████╗      █████╗     ██╗                       ██╗    
+██╔════╝     ██╔═══██╗    ██╔══██╗    ██║                       ██║    
+██║  ███╗    ██║   ██║    ███████║    ██║                       ██║    
+██║   ██║    ██║   ██║    ██╔══██║    ██║                       ╚═╝    
+╚██████╔╝    ╚██████╔╝    ██║  ██║    ███████╗    ██╗    ██╗    ██╗    
+ ╚═════╝      ╚═════╝     ╚═╝  ╚═╝    ╚══════╝    ╚═╝    ╚═╝    ╚═╝    
+          ''']
+
+pacman = ['''
+_______________________ P A C - M A N _______________________
+ ,---.                                                  ,--.  
+/  _.-'     .-.        .-.        .-.         .-.      |oo  |
+\  '._.     '-'        '-'        '-'         '-'      |~~  | 
+ '---'     DON'T  LET  THEM  EAT  ME . . !             |/\/\|
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.                                                  ,--.  
+/  _.-'     .-.        .-.        .-.         .-.      |oo  |
+\  '._.     '-'        '-'        '-'         '-'      |~~  | 
+ '---'    D O N ' T  L E T  T H E M  E A T  M E . . !  |/\/\|
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.                                             ,--.  
+/  _.-'     .-.        .-.        .-.             |oo  |
+\  '._.     '-'        '-'        '-'             |~~  | 
+ '---'    D O N ' T  L E T  T H E M  E A T  M E . |/\/\|
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.                                      ,--.         .-.
+/  _.-'     .-.        .-.        .-.      |oo  |       |OO |
+\  '._.     '-'        '-'        '-'      |~~  |       |   |
+ '---'    D O N ' T  L E T  T H E  M  E A T|/\/\|       '^^^'
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.                                  ,--.     .-.     .-.
+/  _.-'     .-.        .-.        .-.  |oo  |   |OO |   |OO |
+\  '._.     '-'        '-'        '-'  |~~  |   |   |   |   |
+ '---'    D O N ' T  L E T  T H E  M E |/\/\|   '^^^'   '^^^'
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.                         ,--.     .-.     .-.      .-.
+/  _.-'     .-.        .-.    |oo  |   |OO |   |OO |    |OO |
+\  '._.     '-'        '-'    |~~  |   |   |   |   |    |   |
+ '---'    D O N ' T  L E T  T |/\/\|   '^^^'   '^^^'    '^^^'
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+ ,---.              ,--.        .-.        .-.       .-. 
+/  _.-'     .-.    |oo  |      |OO |      |OO |     |OO |
+\  '._.     '-'    |~~  |      |   |      |   |     |   |
+ '---'    D O N ' T|/\/\|      '^^^'      '^^^'     '^^^'
+_____________________________________________________________''', '''
+_______________________ P A C - M A N _______________________
+           ,--.        .-.           .-.          .-. 
+          |oo  |      |OO |         |OO |        |OO |
+  .'.     |~~  |      |   |         |   |        |   |
+ '---'    |/\/\|      '^^^'         '^^^'        '^^^'
+_____________________________________________________________''', '''
+___________________________ P A C - M A N ________________________________
+
+ ██████╗  █████╗ ███╗   ███╗███████╗     ██████╗ ██╗   ██╗███████╗██████╗ 
+██╔════╝ ██╔══██╗████╗ ████║██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔══██╗
+██║  ███╗███████║██╔████╔██║█████╗      ██║   ██║██║   ██║█████╗  ██████╔╝
+██║   ██║██╔══██║██║╚██╔╝██║██╔══╝      ██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗
+╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ╚██████╔╝ ╚████╔╝ ███████╗██║  ██║
+ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝     ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝ ''', '''
+ _______________________ P A C - M A N ___________________________________
+
+██╗   ██╗ ██████╗ ██╗   ██╗    ██╗    ██╗ ██████╗ ███╗   ██╗           ██╗
+╚██╗ ██╔╝██╔═══██╗██║   ██║    ██║    ██║██╔═══██╗████╗  ██║           ██║
+ ╚████╔╝ ██║   ██║██║   ██║    ██║ █╗ ██║██║   ██║██╔██╗ ██║           ██║
+  ╚██╔╝  ██║   ██║██║   ██║    ██║███╗██║██║   ██║██║╚██╗██║           ╚═╝
+   ██║   ╚██████╔╝╚██████╔╝    ╚███╔███╔╝╚██████╔╝██║ ╚████║    ██╗    ██╗
+   ╚═╝    ╚═════╝  ╚═════╝      ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═══╝    ╚═╝    ╚═╝
+__________________________________________________________________________
+''']
 
 
 # GET A RANDOM WORD FROM FILE
@@ -95,25 +230,56 @@ def play_again():
         start_game()
     else:
         print('>THANK YOU FOR PLAYING.')
-        print('#' * 10, 'MADE WITH ❤︎ IN BERLIN INTERNATIONAL COLLEGE - JUNE 2020', '#' * 10, )
-        print('>Coded by: HASAN MAHMOUD <iam_hyh> EHSAN HASHIMI <covid-19>')
+        print('>MADE WITH ❤︎ IN BERLIN INTERNATIONAL COLLEGE - JUNE 2020')
+        print('>CODE BY: HASAN MAHMOUD <iam_hyh> EHSAN HASHIMI <covid-19>')
         exit()
         return question
 
 
+# Global Variable
+game_art = ''
+
+
+# Which game you want to play
+def select_art():
+    global game_art
+    print('>Please select which game art you want to play with?')
+    question = input('>[1]: Classic [2]: football : [3]: Pacman : ')
+    if question == '1':
+        game_art = sketch
+        print('>Okay, You are playing classic.')
+        print('=' * 63)
+    elif question == '2':
+        game_art = football
+        print(">football, Let's play that.")
+        print('=' * 63)
+    elif question == '3':
+        game_art = pacman
+        print('>Pacman, I like that.')
+        print('=' * 63)
+    else:
+        print('Please select 1, 2 OR 3')
+        print('=' * 63)
+        select_art()
+    return game_art
+
+
 # MAIN GAME
 def start_game():
-    guess_count = int()
+    guess_count = 0
     guessed_letters = []
     secret_word = get_random_word()
     guess_limit = 8
 
-    print('#' * 10, "WE LOVE FOOTBALL, LET'S TEST YOUR KNOWLEDGE???", '#' * 10)
+    print('#' * 3, "WE LOVE FOOTBALL, LET'S TEST YOUR KNOWLEDGE???", '#' * 3)
     print('>Try to guess the secret word.')
     print(">The secret word contain", len(secret_word), 'letters.')
     print('>Hint: The secret word could be football team or player name.')
     print('>You have [', guess_limit, '] tries.')
-    print('')
+    print('=' * 63)
+
+    # SET GAME ART
+    select_art()
 
     # GAME LOGIC
     while guess_limit > guess_count:
@@ -122,19 +288,20 @@ def start_game():
         # CHECK IF USER INPUT ALPHABETS
         if not guess.isalpha():
             print(">I don't understand that letter..!?")
-            print('=' * 50)
+            print('=' * 63)
             continue
 
         # (1) IF THE USER GUESSED THE WORD
         if guess == secret_word:
+            print(game_art[9])
             print('>You are right the secret word is [', secret_word, ']')
-            print('=' * 50)
+            print('=' * 63)
             play_again()
 
         # CHECK USER INPUT
         elif len(guess) > 1:
             print('>Only [1] letter or [full word]')
-            print('=' * 50)
+            print('=' * 63)
 
         # (2) IF THE USER GUESSED THE LETTER AGAIN
         elif guess in guessed_letters:
@@ -143,7 +310,7 @@ def start_game():
             # SHOW LIST OF GUESSED LETTERS
             print(">Letter's you tried: ", end='')
             print(','.join(guessed_letters))
-            print('=' * 50)
+            print('=' * 63)
 
         # (3) IF THE USER GUESSED THE RIGHT LETTER
         elif guess in secret_word:
@@ -158,33 +325,35 @@ def start_game():
                 else:
                     update += '_'
             print(update)
-            print('=' * 50)
+            print('=' * 63)
 
             # (4) IF THE USER GUESSED ALL PARTS OF THE WORD
             if update == secret_word:
                 print('>You did it...')
                 print('>CONGRATULATIONS')
                 print('>the secret word is [', update, ']')
-                print('=' * 50)
+                print(game_art[9])
+                print('=' * 63)
                 play_again()
 
         # (5) IF THE USER MADE THE WRONG GUESS
         elif guess not in secret_word:
-            print('>Sorry that letter is not part of the word')
             guessed_letters.append(guess)
             guess_count += 1
-            # DRAW HANGMAN PICTURE
-            print(sketch[guess_count])
+
+            # DRAW ART
+            print(game_art[guess_count])
+            print('>Sorry that letter is not part of the word')
             print('>You have [', guess_limit - guess_count, '] tries left', 'out of [', guess_limit, ']')
             # SHOW LIST OF GUESSED LETTERS
             print(">Letter's you tried: ", end='')
             print(','.join(guessed_letters))
-            print('=' * 50)
+            print('=' * 63)
 
     else:
         # (6) IF THE USER DON'T HAVE ANY GUESSES
-        print('>...GAME OVER...')
         print('>The secret word is....', '[', secret_word, ']')
+        print('=' * 63)
         play_again()
         return
 
