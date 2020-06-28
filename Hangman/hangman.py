@@ -231,7 +231,7 @@ def play_again():
     else:
         print('>THANK YOU FOR PLAYING.')
         print('>MADE WITH ❤︎ IN BERLIN INTERNATIONAL COLLEGE - JUNE 2020')
-        print('>CODE BY: HASAN MAHMOUD <iam_hyh> EHSAN HASHIMI <covid-19>')
+        print('>CODE BY: HASAN MAHMOUD <ID:9426> EHSAN HASHIMI <ID:7502>')
         exit()
         return question
 
