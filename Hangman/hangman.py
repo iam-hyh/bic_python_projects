@@ -1,6 +1,6 @@
 """
 - TO DO LIST 26-06-2020:
-ADD MORE GAME ART
+ADD MORE GAME ART AND FIX SOME ISSUES
 
 - TO DO LIST 23-06-2020:
 ADD DRAWINGS AND FIX SOME ISSUES
@@ -16,12 +16,12 @@ fix comments
 
 -TO DO LIST 19-06-2020:
 read a text file
-pick a random word from it using random function
+pick a random word
 start the game function
 guess the letters if its right count the score 1
 if wrong draw the hangman (hang man = 6 body parts)
 max guess is 6
-draw the won game OR end the
+draw the won game OR end
 call the function again to play the game
 edit the word list
 fixing the random function
@@ -236,11 +236,11 @@ def play_again():
         return question
 
 
-# Global Variable
+# GLOBAL VARIABLE
 game_art = ''
 
 
-# Which game you want to play
+# WHICH GAME YOU WANT TO PLAY
 def select_art():
     global game_art
     print('>Please select which game art you want to play with?')
@@ -281,7 +281,7 @@ def start_game():
     # SET GAME ART
     select_art()
 
-    # GAME LOGIC
+    # GAME LOGIC START HERE --->
     while guess_limit > guess_count:
         guess = input('Guess a letter or word: ').lower()
 
@@ -329,10 +329,8 @@ def start_game():
 
             # (4) IF THE USER GUESSED ALL PARTS OF THE WORD
             if update == secret_word:
-                print('>You did it...')
-                print('>CONGRATULATIONS')
-                print('>the secret word is [', update, ']')
                 print(game_art[9])
+                print('>You are right the secret word is [', update, ']')
                 print('=' * 63)
                 play_again()
 
